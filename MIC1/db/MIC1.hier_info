@@ -1,0 +1,43 @@
+|MPC_GENERATOR
+MPC[0] <= inst12[0].DB_MAX_OUTPUT_PORT_TYPE
+MPC[1] <= inst12[1].DB_MAX_OUTPUT_PORT_TYPE
+MPC[2] <= inst12[2].DB_MAX_OUTPUT_PORT_TYPE
+MPC[3] <= inst12[3].DB_MAX_OUTPUT_PORT_TYPE
+MPC[4] <= inst12[4].DB_MAX_OUTPUT_PORT_TYPE
+MPC[5] <= inst12[5].DB_MAX_OUTPUT_PORT_TYPE
+MPC[6] <= inst12[6].DB_MAX_OUTPUT_PORT_TYPE
+MPC[7] <= inst12[7].DB_MAX_OUTPUT_PORT_TYPE
+MPC[8] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+NEXT_ADDRESS[0] => inst12[0].IN0
+NEXT_ADDRESS[1] => inst12[1].IN0
+NEXT_ADDRESS[2] => inst12[2].IN0
+NEXT_ADDRESS[3] => inst12[3].IN0
+NEXT_ADDRESS[4] => inst12[4].IN0
+NEXT_ADDRESS[5] => inst12[5].IN0
+NEXT_ADDRESS[6] => inst12[6].IN0
+NEXT_ADDRESS[7] => inst12[7].IN0
+NEXT_ADDRESS[8] => inst.IN0
+JAM[0] => inst11.IN0
+JAM[1] => inst10.IN0
+JAM[2] => inst9[7].IN0
+JAM[2] => inst9[6].IN0
+JAM[2] => inst9[5].IN0
+JAM[2] => inst9[4].IN0
+JAM[2] => inst9[3].IN0
+JAM[2] => inst9[2].IN0
+JAM[2] => inst9[1].IN0
+JAM[2] => inst9[0].IN0
+CLOCK => inst8.CLK
+CLOCK => inst1.CLK
+Z => inst8.DATAIN
+N => inst1.DATAIN
+MBR_IN[0] => inst9[0].IN1
+MBR_IN[1] => inst9[1].IN1
+MBR_IN[2] => inst9[2].IN1
+MBR_IN[3] => inst9[3].IN1
+MBR_IN[4] => inst9[4].IN1
+MBR_IN[5] => inst9[5].IN1
+MBR_IN[6] => inst9[6].IN1
+MBR_IN[7] => inst9[7].IN1
+
+
