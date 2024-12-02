@@ -138,6 +138,6 @@ END SYN;
 -- Retrieval info: GEN_FILE: TYPE_NORMAL CONTROL_STORE.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL CONTROL_STORE.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL CONTROL_STORE.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL CONTROL_STORE.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL CONTROL_STORE.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL CONTROL_STORE_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: altera_mf

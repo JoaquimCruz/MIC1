@@ -1,5 +1,5 @@
 Flow report for MIC1
-Mon Dec 02 14:42:25 2024
+Mon Dec 02 19:02:20 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Dec 02 14:42:25 2024      ;
+; Flow Status                        ; Successful - Mon Dec 02 19:02:20 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                       ;
 ; Top-level Entity Name              ; CONTROL_UNIT                               ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 10 / 21,280 ( < 1 % )                      ;
+; Total logic elements               ; 11 / 21,280 ( < 1 % )                      ;
 ;     Total combinational functions  ; 10 / 21,280 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 2 / 21,280 ( < 1 % )                       ;
-; Total registers                    ; 2                                          ;
-; Total pins                         ; 56 / 167 ( 34 % )                          ;
+;     Dedicated logic registers      ; 3 / 21,280 ( < 1 % )                       ;
+; Total registers                    ; 3                                          ;
+; Total pins                         ; 57 / 167 ( 34 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 18,432 / 774,144 ( 2 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                             ;
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2024 14:38:35 ;
+; Start date & time ; 12/02/2024 19:01:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIC1                ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------+---------------+--------------+----------------+
 ; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name  ; Section Id     ;
 +-------------------------------------+-------------------------------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 925258687203.173316111411168                          ; --            ; --           ; --             ;
+; COMPILER_SIGNATURE_ID               ; 925258687203.173317689024028                          ; --            ; --           ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                   ; --            ; --           ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ ; --            ; --           ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                           ; --            ; --           ; eda_simulation ;
@@ -101,22 +101,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4726 MB             ; 00:00:00                           ;
-; Fitter                    ; 00:00:07     ; 2.0                     ; 5446 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4655 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4611 MB             ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4738 MB             ; 00:00:00                           ;
+; Fitter                    ; 00:00:12     ; 1.5                     ; 5446 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4655 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4681 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4611 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4619 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4618 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4618 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4618 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4613 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4630 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -129,14 +121,6 @@ applicable agreement for further details.
 ; Fitter                    ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; Joaquim          ; Windows 7 ; 6.2        ; x86_64         ;
@@ -153,14 +137,6 @@ quartus_sta MIC1 -c MIC1
 quartus_eda --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
 quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog MIC1 -c MIC1 --vector_source=C:/Users/joaqu/Documents/MIC1-1/MIC1/CONTROL_UNIT_istore.vwf --testbench_file=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/CONTROL_UNIT_istore.vwf.vt
 quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ MIC1 -c MIC1
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog MIC1 -c MIC1 --vector_source=C:/Users/joaqu/Documents/MIC1-1/MIC1/CONTROL_UNIT_iload.vwf --testbench_file=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/CONTROL_UNIT_iload.vwf.vt
-quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ MIC1 -c MIC1
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog MIC1 -c MIC1 --vector_source=C:/Users/joaqu/Documents/MIC1-1/MIC1/CONTROL_UNIT_iadd_isub.vwf --testbench_file=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/CONTROL_UNIT_iadd_isub.vwf.vt
-quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ MIC1 -c MIC1
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog MIC1 -c MIC1 --vector_source=C:/Users/joaqu/Documents/MIC1-1/MIC1/CONTROL_UNIT_bipush.vwf --testbench_file=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/CONTROL_UNIT_bipush.vwf.vt
-quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ MIC1 -c MIC1
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog MIC1 -c MIC1 --vector_source=C:/Users/joaqu/Documents/MIC1-1/MIC1/CONTROL_UNIT_iadd_isub.vwf --testbench_file=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/CONTROL_UNIT_iadd_isub.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ MIC1 -c MIC1
 
 
 

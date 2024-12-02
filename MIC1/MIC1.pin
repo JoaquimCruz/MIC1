@@ -181,7 +181,7 @@ GND                          : F13       : gnd    :                   :         
 VCCD_PLL                     : F14       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 6         :                
+N                            : F17       : input  : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 6         :                
 GND                          : G1        : gnd    :                   :         :           :                
 GND                          : G2        : gnd    :                   :         :           :                
@@ -235,7 +235,7 @@ GND                          : J13       : gnd    :                   :         
 VCCINT                       : J14       : power  :                   : 1.2V    :           :                
 VCCIO6                       : J15       : power  :                   : 2.5V    : 6         :                
 MBR_IN[1]                    : J16       : input  : 2.5 V             :         : 6         : N              
-MIR[20]                      : J17       : output : 2.5 V             :         : 6         : N              
+MBR_IN[5]                    : J17       : input  : 2.5 V             :         : 6         : N              
 MBR_IN[6]                    : J18       : input  : 2.5 V             :         : 6         : N              
 GXB_NC                       : K1        :        :                   :         : QL0       :                
 GXB_NC                       : K2        :        :                   :         : QL0       :                
@@ -251,8 +251,8 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 VCCINT                       : K13       : power  :                   : 1.2V    :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-MIR[12]                      : K15       : output : 2.5 V             :         : 5         : N              
-MIR[8]                       : K16       : output : 2.5 V             :         : 5         : N              
+MIR[7]                       : K15       : output : 2.5 V             :         : 5         : N              
+MIR[4]                       : K16       : output : 2.5 V             :         : 5         : N              
 GND+                         : K17       :        :                   :         : 5         :                
 GND+                         : K18       :        :                   :         : 5         :                
 GND                          : L1        : gnd    :                   :         :           :                
@@ -269,10 +269,10 @@ GND                          : L11       : gnd    :                   :         
 VCCINT                       : L12       : power  :                   : 1.2V    :           :                
 VCCA                         : L13       : power  :                   : 2.5V    :           :                
 GND                          : L14       : gnd    :                   :         :           :                
-MIR[6]                       : L15       : output : 2.5 V             :         : 5         : N              
-MIR[27]                      : L16       : output : 2.5 V             :         : 5         : N              
+MIR[32]                      : L15       : output : 2.5 V             :         : 5         : N              
+MIR[6]                       : L16       : output : 2.5 V             :         : 5         : N              
 GND                          : L17       : gnd    :                   :         :           :                
-MIR[18]                      : L18       : output : 2.5 V             :         : 5         : N              
+Z                            : L18       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : M1        :        :                   :         : QL0       :                
 GXB_GND*                     : M2        :        :                   :         : QL0       :                
 VCCL_GXB                     : M3        : power  :                   : 1.2V    :           :                
@@ -288,9 +288,9 @@ GND                          : M12       : gnd    :                   :         
 GND                          : M13       : gnd    :                   :         :           :                
 VCCD_PLL                     : M14       : power  :                   : 1.2V    :           :                
 VCCIO5                       : M15       : power  :                   : 2.5V    : 5         :                
-MIR[1]                       : M16       : output : 2.5 V             :         : 5         : N              
-MIR[13]                      : M17       : output : 2.5 V             :         : 5         : N              
-MIR[21]                      : M18       : output : 2.5 V             :         : 5         : N              
+MIR[17]                      : M16       : output : 2.5 V             :         : 5         : N              
+MIR[9]                       : M17       : output : 2.5 V             :         : 5         : N              
+MIR[18]                      : M18       : output : 2.5 V             :         : 5         : N              
 GND                          : N1        : gnd    :                   :         :           :                
 GND                          : N2        : gnd    :                   :         :           :                
 VCCA_GXB                     : N3        : power  :                   : 2.5V    :           :                
@@ -305,10 +305,10 @@ VCCIO4                       : N11       : power  :                   : 2.5V    
 VCCIO4                       : N12       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N13       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N14       : power  :                   : 2.5V    : 4         :                
-MIR[2]                       : N15       : output : 2.5 V             :         : 5         : N              
-MPC[0]                       : N16       : output : 2.5 V             :         : 5         : N              
-MIR[0]                       : N17       : output : 2.5 V             :         : 5         : N              
-MIR[11]                      : N18       : output : 2.5 V             :         : 5         : N              
+MPC[8]                       : N15       : output : 2.5 V             :         : 5         : N              
+MPC[5]                       : N16       : output : 2.5 V             :         : 5         : N              
+MIR[15]                      : N17       : output : 2.5 V             :         : 5         : N              
+MIR[12]                      : N18       : output : 2.5 V             :         : 5         : N              
 GXB_NC                       : P1        :        :                   :         : QL0       :                
 GXB_NC                       : P2        :        :                   :         : QL0       :                
 GND                          : P3        : gnd    :                   :         :           :                
@@ -318,13 +318,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :      
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
 GND                          : P8        : gnd    :                   :         :           :                
 VCCIO3                       : P9        : power  :                   : 2.5V    : 3         :                
-MIR[24]                      : P10       : output : 2.5 V             :         : 3         : N              
+MIR[2]                       : P10       : output : 2.5 V             :         : 3         : N              
 GND                          : P11       : gnd    :                   :         :           :                
-MPC[5]                       : P12       : output : 2.5 V             :         : 4         : N              
-MPC[8]                       : P13       : output : 2.5 V             :         : 4         : N              
+MPC[4]                       : P12       : output : 2.5 V             :         : 4         : N              
+MIR[31]                      : P13       : output : 2.5 V             :         : 4         : N              
 GND                          : P14       : gnd    :                   :         :           :                
-MBR_IN[5]                    : P15       : input  : 2.5 V             :         : 4         : N              
-MIR[19]                      : P16       : output : 2.5 V             :         : 5         : N              
+MIR[35]                      : P15       : output : 2.5 V             :         : 4         : N              
+MIR[24]                      : P16       : output : 2.5 V             :         : 5         : N              
 GND                          : P17       : gnd    :                   :         :           :                
 MIR[16]                      : P18       : output : 2.5 V             :         : 5         : N              
 GND                          : R1        : gnd    :                   :         :           :                
@@ -335,16 +335,16 @@ MSEL1                        : R5        :        :                   :         
 ~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : R6        : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :         : 3         :                
-MIR[14]                      : R9        : output : 2.5 V             :         : 3         : N              
-MIR[25]                      : R10       : output : 2.5 V             :         : 3         : N              
-Z                            : R11       : input  : 2.5 V             :         : 4         : N              
-MIR[33]                      : R12       : output : 2.5 V             :         : 4         : N              
-MPC[7]                       : R13       : output : 2.5 V             :         : 4         : N              
-MBR_IN[2]                    : R14       : input  : 2.5 V             :         : 4         : N              
-MIR[31]                      : R15       : output : 2.5 V             :         : 4         : N              
-MBR_IN[0]                    : R16       : input  : 2.5 V             :         : 5         : N              
-MIR[10]                      : R17       : output : 2.5 V             :         : 5         : N              
-MIR[7]                       : R18       : output : 2.5 V             :         : 5         : N              
+MIR[33]                      : R9        : output : 2.5 V             :         : 3         : N              
+MIR[20]                      : R10       : output : 2.5 V             :         : 3         : N              
+MBR_IN[4]                    : R11       : input  : 2.5 V             :         : 4         : N              
+MIR[27]                      : R12       : output : 2.5 V             :         : 4         : N              
+MIR[23]                      : R13       : output : 2.5 V             :         : 4         : N              
+MBR_IN[0]                    : R14       : input  : 2.5 V             :         : 4         : N              
+MIR[25]                      : R15       : output : 2.5 V             :         : 4         : N              
+MIR[28]                      : R16       : output : 2.5 V             :         : 5         : N              
+MBR_IN[3]                    : R17       : input  : 2.5 V             :         : 5         : N              
+WRITE_ENABLE                 : R18       : output : 2.5 V             :         : 5         : N              
 GXB_GND*                     : T1        :        :                   :         : QL0       :                
 GXB_GND*                     : T2        :        :                   :         : QL0       :                
 GND                          : T3        : gnd    :                   :         :           :                
@@ -354,15 +354,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
-MIR[3]                       : T10       : output : 2.5 V             :         : 3         : N              
-N                            : T11       : input  : 2.5 V             :         : 4         : N              
-MIR[4]                       : T12       : output : 2.5 V             :         : 4         : N              
-MPC[2]                       : T13       : output : 2.5 V             :         : 4         : N              
-MPC[1]                       : T14       : output : 2.5 V             :         : 4         : N              
-MBR_IN[3]                    : T15       : input  : 2.5 V             :         : 4         : N              
+MIR[19]                      : T10       : output : 2.5 V             :         : 3         : N              
+MIR[3]                       : T11       : output : 2.5 V             :         : 4         : N              
+MIR[10]                      : T12       : output : 2.5 V             :         : 4         : N              
+MPC[0]                       : T13       : output : 2.5 V             :         : 4         : N              
+MPC[2]                       : T14       : output : 2.5 V             :         : 4         : N              
+MPC[3]                       : T15       : output : 2.5 V             :         : 4         : N              
 MIR[30]                      : T16       : output : 2.5 V             :         : 4         : N              
-MIR[22]                      : T17       : output : 2.5 V             :         : 4         : N              
-MIR[15]                      : T18       : output : 2.5 V             :         : 5         : N              
+MIR[34]                      : T17       : output : 2.5 V             :         : 4         : N              
+MIR[5]                       : T18       : output : 2.5 V             :         : 5         : N              
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
 NC                           : U3        :        :                   :         :           :                
@@ -372,15 +372,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 3         :                
 GND                          : U8        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U9        :        :                   :         : 3         :                
-MIR[35]                      : U10       : output : 2.5 V             :         : 3         : N              
+MIR[21]                      : U10       : output : 2.5 V             :         : 3         : N              
 GND                          : U11       : gnd    :                   :         :           :                
-MIR[17]                      : U12       : output : 2.5 V             :         : 4         : N              
-MIR[29]                      : U13       : output : 2.5 V             :         : 4         : N              
+MIR[1]                       : U12       : output : 2.5 V             :         : 4         : N              
+MIR[8]                       : U13       : output : 2.5 V             :         : 4         : N              
 GND                          : U14       : gnd    :                   :         :           :                
-MBR_IN[4]                    : U15       : input  : 2.5 V             :         : 4         : N              
-MPC[3]                       : U16       : output : 2.5 V             :         : 4         : N              
+MIR[29]                      : U15       : output : 2.5 V             :         : 4         : N              
+MBR_IN[2]                    : U16       : input  : 2.5 V             :         : 4         : N              
 GND                          : U17       : gnd    :                   :         :           :                
-MIR[34]                      : U18       : output : 2.5 V             :         : 4         : N              
+MPC[1]                       : U18       : output : 2.5 V             :         : 4         : N              
 RREF                         : V1        :        :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 NC                           : V3        :        :                   :         :           :                
@@ -389,13 +389,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 3         :                
-MIR[5]                       : V9        : output : 2.5 V             :         : 3         : N              
-MIR[23]                      : V10       : output : 2.5 V             :         : 3         : N              
+MIR[11]                      : V9        : output : 2.5 V             :         : 3         : N              
+MIR[22]                      : V10       : output : 2.5 V             :         : 3         : N              
 GND+                         : V11       :        :                   :         : 4         :                
 GND+                         : V12       :        :                   :         : 4         :                
-MIR[32]                      : V13       : output : 2.5 V             :         : 4         : N              
-MIR[9]                       : V14       : output : 2.5 V             :         : 4         : N              
-MPC[6]                       : V15       : output : 2.5 V             :         : 4         : N              
-MIR[26]                      : V16       : output : 2.5 V             :         : 4         : N              
-MIR[28]                      : V17       : output : 2.5 V             :         : 4         : N              
-MPC[4]                       : V18       : output : 2.5 V             :         : 4         : N              
+MIR[13]                      : V13       : output : 2.5 V             :         : 4         : N              
+MIR[14]                      : V14       : output : 2.5 V             :         : 4         : N              
+MIR[0]                       : V15       : output : 2.5 V             :         : 4         : N              
+MPC[7]                       : V16       : output : 2.5 V             :         : 4         : N              
+MIR[26]                      : V17       : output : 2.5 V             :         : 4         : N              
+MPC[6]                       : V18       : output : 2.5 V             :         : 4         : N              
