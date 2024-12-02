@@ -1,6 +1,6 @@
 EDA Netlist Writer report for MIC1
-Mon Dec 02 19:02:20 2024
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Mon Dec 02 19:45:34 2024
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,10 +36,10 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Dec 02 19:02:20 2024 ;
+; EDA Netlist Writer Status ; Successful - Mon Dec 02 19:45:34 2024 ;
 ; Revision Name             ; MIC1                                  ;
 ; Top-level Entity Name     ; CONTROL_UNIT                          ;
-; Family                    ; Cyclone IV GX                         ;
+; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
@@ -66,54 +66,30 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                          ;
-+-------------------------------------------------------------------------------------+
-; Generated Files                                                                     ;
-+-------------------------------------------------------------------------------------+
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_6_1200mv_85c_slow.vo     ;
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_6_1200mv_0c_slow.vo      ;
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_min_1200mv_0c_fast.vo    ;
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1.vo                       ;
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_6_1200mv_85c_v_slow.sdo  ;
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_6_1200mv_0c_v_slow.sdo   ;
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_min_1200mv_0c_v_fast.sdo ;
-; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_v.sdo                    ;
-+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Simulation Generated Files                                            ;
++-----------------------------------------------------------------------+
+; Generated Files                                                       ;
++-----------------------------------------------------------------------+
+; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1.vo         ;
+; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_fast.vo    ;
+; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_v.sdo      ;
+; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1_v_fast.sdo ;
++-----------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
-    Info: Your use of Altera Corporation's design tools, logic functions 
-    Info: and other software and tools, and its AMPP partner logic 
-    Info: functions, and any output files from any of the foregoing 
-    Info: (including device programming or simulation files), and any 
-    Info: associated documentation or information are expressly subject 
-    Info: to the terms and conditions of the Altera Program License 
-    Info: Subscription Agreement, Altera MegaCore Function License 
-    Info: Agreement, or other applicable license agreement, including, 
-    Info: without limitation, that your use is for the sole purpose of 
-    Info: programming logic devices manufactured by Altera and sold by 
-    Info: Altera or its authorized distributors.  Please refer to the 
-    Info: applicable agreement for further details.
-    Info: Processing started: Mon Dec 02 19:02:19 2024
-Info: Command: quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ MIC1 -c MIC1
-Info (204019): Generated file MIC1_6_1200mv_85c_slow.vo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIC1_6_1200mv_0c_slow.vo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIC1_min_1200mv_0c_fast.vo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIC1.vo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIC1_6_1200mv_85c_v_slow.sdo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIC1_6_1200mv_0c_v_slow.sdo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIC1_min_1200mv_0c_v_fast.sdo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIC1_v.sdo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4630 megabytes
-    Info: Processing ended: Mon Dec 02 19:02:20 2024
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 02 19:45:33 2024
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
+Info (204026): Generated files "MIC1.vo", "MIC1_fast.vo", "MIC1_v.sdo" and "MIC1_v_fast.sdo" in directory "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 336 megabytes
+    Info: Processing ended: Mon Dec 02 19:45:34 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
