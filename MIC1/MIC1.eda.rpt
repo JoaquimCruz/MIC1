@@ -1,5 +1,5 @@
 EDA Netlist Writer report for MIC1
-Thu Nov 21 21:46:33 2024
+Mon Dec 02 14:42:25 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov 21 21:46:33 2024 ;
+; EDA Netlist Writer Status ; Successful - Mon Dec 02 14:42:25 2024 ;
 ; Revision Name             ; MIC1                                  ;
-; Top-level Entity Name     ; MPC_GENERATOR                         ;
+; Top-level Entity Name     ; CONTROL_UNIT                          ;
 ; Family                    ; Cyclone IV GX                         ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------+
-; Simulation Generated Files                             ;
-+--------------------------------------------------------+
-; Generated Files                                        ;
-+--------------------------------------------------------+
-; C:/Users/joaqu/Documents/MIC1/simulation/qsim//MIC1.vo ;
-+--------------------------------------------------------+
++---------------------------------------------------------------+
+; Simulation Generated Files                                    ;
++---------------------------------------------------------------+
+; Generated Files                                               ;
++---------------------------------------------------------------+
+; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//MIC1.vo ;
++---------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,13 +93,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Thu Nov 21 21:46:32 2024
-Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1/simulation/qsim/ MIC1 -c MIC1
-Info (204019): Generated file MIC1.vo in folder "C:/Users/joaqu/Documents/MIC1/simulation/qsim//" for EDA simulation tool
+    Info: Processing started: Mon Dec 02 14:42:25 2024
+Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ MIC1 -c MIC1
+Info (204019): Generated file MIC1.vo in folder "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4608 megabytes
-    Info: Processing ended: Thu Nov 21 21:46:33 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4613 megabytes
+    Info: Processing ended: Mon Dec 02 14:42:25 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

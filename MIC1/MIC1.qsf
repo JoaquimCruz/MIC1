@@ -38,15 +38,21 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY MPC_GENERATOR
+set_global_assignment -name TOP_LEVEL_ENTITY CONTROL_UNIT
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:04:27  NOVEMBER 06, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/joaqu/Documents/MIC1/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name MIF_FILE microprograma1.mif
+set_global_assignment -name SOURCE_FILE lpm_mux0.cmp
+set_global_assignment -name VECTOR_WAVEFORM_FILE CONTROL_UNIT_istore.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CONTROL_UNIT_iload.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CONTROL_UNIT_iadd_isub.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CONTROL_UNIT_bipush.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mpc_generator.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_32bit_2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_32bit.vwf
@@ -123,8 +129,9 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS.vwf
 set_global_assignment -name BSF_FILE BANK_REGS.bsf
 set_global_assignment -name BDF_FILE BANK_REGS.bdf
 set_global_assignment -name BDF_FILE MPC_GENERATOR.bdf
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name BDF_FILE CONTROL_UNIT.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name QIP_FILE lpm_mux0.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
