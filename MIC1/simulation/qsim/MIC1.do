@@ -1,10 +1,10 @@
-onerror {exit -code 1}
+onerror {quit -f}
 vlib work
 vlog -work work MIC1.vo
-vlog -work work CONTROL_UNIT_istore.vwf.vt
-vsim -novopt -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.CONTROL_UNIT_vlg_vec_tst -voptargs="+acc"
+vlog -work work MIC1.vt
+vsim -novopt -c -t 1ps -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate work.DATAPATH_vlg_vec_tst
 vcd file -direction MIC1.msim.vcd
-vcd add -internal CONTROL_UNIT_vlg_vec_tst/*
-vcd add -internal CONTROL_UNIT_vlg_vec_tst/i1/*
+vcd add -internal DATAPATH_vlg_vec_tst/*
+vcd add -internal DATAPATH_vlg_vec_tst/i1/*
+add wave /*
 run -all
-quit -f

@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 48 256 224 272)
+	(rect 688 536 864 552)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "MBR_IN[7..0]" (rect 9 0 76 12)(font "Arial" ))
 	(pt 176 8)
@@ -118,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1408 432 1587 448)
+	(rect 1408 432 1584 448)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "WRITE_ENABLE" (rect 90 0 173 12)(font "Arial" ))
 	(pt 0 8)
@@ -215,7 +215,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1112 200 1328 328)
+	(rect 1104 200 1320 328)
 	(text "CONTROL_STORE" (rect 33 0 165 16)(font "Arial" (font_size 10)))
 	(text "inst8" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -304,7 +304,57 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
+		(line (pt 52 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 12 12)(pt 52 12))
+		(line (pt 12 68)(pt 52 68))
+		(line (pt 52 68)(pt 52 12))
+		(line (pt 12 68)(pt 12 12))
+		(line (pt 19 40)(pt 12 47))
+		(line (pt 12 32)(pt 20 40))
+		(circle (rect 28 4 36 12))
+		(circle (rect 28 68 36 76))
+	)
+)
+(symbol
+	(rect 1120 520 1184 600)
+	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 68 26 80)(font "Arial" ))
+	(port
+		(pt 32 80)
+		(input)
+		(text "CLRN" (rect 21 59 44 71)(font "Courier New" (bold)))
+		(text "CLRN" (rect 21 58 44 70)(font "Courier New" (bold)))
+		(line (pt 32 80)(pt 32 76))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "CLK" (rect 3 29 20 41)(font "Courier New" (bold))(invisible))
+		(text "CLK" (rect 3 29 20 41)(font "Courier New" (bold))(invisible))
+		(line (pt 0 40)(pt 12 40))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "D" (rect 14 20 19 32)(font "Courier New" (bold)))
+		(text "D" (rect 14 20 19 32)(font "Courier New" (bold)))
+		(line (pt 0 24)(pt 12 24))
+	)
+	(port
+		(pt 32 0)
+		(input)
+		(text "PRN" (rect 24 13 41 25)(font "Courier New" (bold)))
+		(text "PRN" (rect 24 11 41 23)(font "Courier New" (bold)))
+		(line (pt 32 4)(pt 32 0))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -337,11 +387,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 480 264)
-	(pt 224 264)
-	(bus)
-)
-(connector
 	(pt 480 280)
 	(pt 224 280)
 )
@@ -352,25 +397,6 @@ applicable agreement for further details.
 (connector
 	(pt 224 312)
 	(pt 480 312)
-)
-(connector
-	(pt 1432 232)
-	(pt 1328 232)
-	(bus)
-)
-(connector
-	(pt 1008 312)
-	(pt 1112 312)
-)
-(connector
-	(pt 712 232)
-	(pt 888 232)
-	(bus)
-)
-(connector
-	(pt 888 232)
-	(pt 1112 232)
-	(bus)
 )
 (connector
 	(pt 1184 440)
@@ -390,13 +416,63 @@ applicable agreement for further details.
 	(pt 912 312)
 )
 (connector
-	(pt 912 312)
-	(pt 784 312)
-)
-(connector
 	(text "MIR[6]" (rect 1081 424 1114 436)(font "Arial" ))
 	(pt 1120 440)
 	(pt 1032 440)
 )
+(connector
+	(pt 1120 560)
+	(pt 872 560)
+)
+(connector
+	(pt 872 560)
+	(pt 872 312)
+)
+(connector
+	(pt 912 312)
+	(pt 872 312)
+)
+(connector
+	(pt 872 312)
+	(pt 784 312)
+)
+(connector
+	(text "MBR_MPC[7..0]" (rect 1249 528 1328 540)(font "Arial" ))
+	(pt 1328 544)
+	(pt 1184 544)
+	(bus)
+)
+(connector
+	(text "MBR_MPC[7..0]" (rect 423 248 502 260)(font "Arial" ))
+	(pt 480 264)
+	(pt 384 264)
+	(bus)
+)
+(connector
+	(pt 1008 312)
+	(pt 1104 312)
+)
+(connector
+	(pt 712 232)
+	(pt 888 232)
+	(bus)
+)
+(connector
+	(pt 888 232)
+	(pt 1104 232)
+	(bus)
+)
+(connector
+	(pt 1320 232)
+	(pt 1432 232)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS594>>" (rect 939 528 1057 540)(font "Arial" )(invisible))
+	(pt 864 544)
+	(pt 1120 544)
+	(bus)
+)
 (junction (pt 888 232))
 (junction (pt 912 312))
+(junction (pt 872 312))

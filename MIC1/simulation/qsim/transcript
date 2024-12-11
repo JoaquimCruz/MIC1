@@ -2,39 +2,15 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CONTROL_UNIT
+# -- Compiling module DATAPATH
 # 
 # Top level modules:
-# 	CONTROL_UNIT
+# 	DATAPATH
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CONTROL_UNIT_vlg_sample_tst
-# -- Compiling module CONTROL_UNIT_vlg_check_tst
-# -- Compiling module CONTROL_UNIT_vlg_vec_tst
+# -- Compiling module DATAPATH_vlg_sample_tst
+# -- Compiling module DATAPATH_vlg_check_tst
+# ** Error: MIC1.vt(322): (vlog-2730) Undefined variable: 'MIR_expected'.
 # 
-# Top level modules:
-# 	CONTROL_UNIT_vlg_vec_tst
-# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.CONTROL_UNIT_vlg_vec_tst 
-# Loading work.CONTROL_UNIT_vlg_vec_tst
-# Loading work.CONTROL_UNIT
-# Loading cycloneiv_ver.cycloneiv_io_obuf
-# Loading cycloneiv_ver.cycloneiv_io_ibuf
-# Loading cycloneiv_ver.cycloneiv_clkctrl
-# Loading cycloneiv_ver.cycloneiv_mux41
-# Loading cycloneiv_ver.cycloneiv_ena_reg
-# Loading cycloneiv_ver.cycloneiv_ram_block
-# Loading cycloneiv_ver.cycloneiv_ram_register
-# Loading cycloneiv_ver.cycloneiv_ram_pulse_generator
-# Loading altera_ver.dffeas
-# Loading cycloneiv_ver.cycloneiv_lcell_comb
-# Loading work.CONTROL_UNIT_vlg_sample_tst
-# Loading work.CONTROL_UNIT_vlg_check_tst
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
-# 
-# Loading instances from MIC1_v.sdo
-# Loading altera_ver.PRIM_GDFF_LOW
-# Loading timing data from MIC1_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst File: CONTROL_UNIT_istore.vwf.vt
-# Simulation passed !
-# ** Note: $finish    : CONTROL_UNIT_istore.vwf.vt(958)
-#    Time: 1800 ns  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst/tb_out
+# -- Compiling module DATAPATH_vlg_vec_tst
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./MIC1.do line 4
