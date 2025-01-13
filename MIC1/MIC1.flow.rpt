@@ -1,5 +1,5 @@
 Flow report for MIC1
-Wed Dec 11 17:04:39 2024
+Sun Jan 12 21:17:06 2025
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Dec 11 17:04:39 2024           ;
+; Flow Status                        ; Successful - Sun Jan 12 21:17:06 2025           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; CPU                                             ;
+; Top-level Entity Name              ; MIC1                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 572 / 14,448 ( 4 % )                            ;
-;     Total combinational functions  ; 452 / 14,448 ( 3 % )                            ;
+; Total logic elements               ; 586 / 14,448 ( 4 % )                            ;
+;     Total combinational functions  ; 463 / 14,448 ( 3 % )                            ;
 ;     Dedicated logic registers      ; 317 / 14,448 ( 2 % )                            ;
 ; Total registers                    ; 317                                             ;
-; Total pins                         ; 192 / 315 ( 61 % )                              ;
+; Total pins                         ; 184 / 315 ( 58 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 18,432 / 239,616 ( 8 % )                        ;
+; Total memory bits                  ; 51,200 / 239,616 ( 21 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 ; Device                             ; EP2C15AF484C6                                   ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/11/2024 17:04:08 ;
+; Start date & time ; 01/12/2025 21:16:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIC1                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 925258687203.173394744748736                          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 925258687203.173672740010800                          ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                   ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/joaqu/Documents/MIC1-1/MIC1/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                           ; --            ; --          ; eda_simulation ;
@@ -83,16 +83,19 @@ applicable agreement for further details.
 ; EDA_TIME_SCALE                      ; 1 ps                                                  ; --            ; --          ; eda_simulation ;
 ; IP_TOOL_NAME                        ; ROM: 1-PORT                                           ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_MUX                                               ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 2-PORT                                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.1                                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                                  ; --            ; --          ; --             ;
 ; MISC_FILE                           ; CONTROL_STORE.bsf                                     ; --            ; --          ; --             ;
 ; MISC_FILE                           ; CONTROL_STORE.cmp                                     ; --            ; --          ; --             ;
 ; MISC_FILE                           ; lpm_mux0.bsf                                          ; --            ; --          ; --             ;
 ; MISC_FILE                           ; lpm_mux0.cmp                                          ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                              ; --            ; CPU         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                 ; --            ; CPU         ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                ; --            ; CPU         ; Top            ;
-; TOP_LEVEL_ENTITY                    ; CPU                                                   ; MIC1          ; --          ; --             ;
+; MISC_FILE                           ; RAM.bsf                                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; RAM.cmp                                               ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                ; --            ; --          ; Top            ;
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
 
 
@@ -101,12 +104,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 399 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:13     ; 1.0                     ; 481 MB              ; 00:00:02                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 359 MB              ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 342 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 329 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 409 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 471 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 371 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 331 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 324 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
