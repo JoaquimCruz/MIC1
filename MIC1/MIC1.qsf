@@ -49,11 +49,10 @@ set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
-set_global_assignment -name MIF_FILE RAM1.mif
+set_global_assignment -name MIF_FILE RAM3.mif
 set_global_assignment -name VECTOR_WAVEFORM_FILE "MIC1_recursive_sum (1).vwf"
 set_global_assignment -name SOURCE_FILE RAM.cmp
 set_global_assignment -name BDF_FILE CPU2.bdf
-set_global_assignment -name MIF_FILE RAM.mif
 set_global_assignment -name TEXT_FILE "RAM memory map.txt"
 set_global_assignment -name VECTOR_WAVEFORM_FILE MIC1_iload_iadd.vwf
 set_global_assignment -name MIF_FILE Microcode2.mif
@@ -163,4 +162,4 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/joaqu/Documents/MIC1-1/MIC1/MIC1_iload_iadd.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/joaqu/Documents/MIC1-1/MIC1/MIC1_recursive_sum (1).vwf"

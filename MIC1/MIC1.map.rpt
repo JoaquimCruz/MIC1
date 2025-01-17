@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIC1
-Sun Jan 12 21:16:44 2025
+Fri Jan 17 15:00:28 2025
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -20,7 +20,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  12. Inverted Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Source assignments for CPU:inst1|CONTROL_UNIT:inst1|CONTROL_STORE:inst8|altsyncram:altsyncram_component|altsyncram_n6a1:auto_generated
- 15. Source assignments for RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated
+ 15. Source assignments for RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated
  16. Parameter Settings for User Entity Instance: CPU:inst1|CONTROL_UNIT:inst1|CONTROL_STORE:inst8|altsyncram:altsyncram_component
  17. Parameter Settings for User Entity Instance: RAM:inst|altsyncram:altsyncram_component
  18. altsyncram Parameter Settings by Entity Instance
@@ -51,7 +51,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan 12 21:16:44 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 17 15:00:28 2025           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
 ; Top-level Entity Name              ; MIC1                                            ;
@@ -168,7 +168,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ; Library ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
-; RAM1.mif                         ; yes             ; User Memory Initialization File    ; C:/Users/joaqu/Documents/MIC1-1/MIC1/RAM1.mif                           ;         ;
+; RAM3.mif                         ; yes             ; User Memory Initialization File    ; C:/Users/joaqu/Documents/MIC1-1/MIC1/RAM3.mif                           ;         ;
 ; Microcode2.mif                   ; yes             ; User Memory Initialization File    ; C:/Users/joaqu/Documents/MIC1-1/MIC1/Microcode2.mif                     ;         ;
 ; CONTROL_STORE.vhd                ; yes             ; User Wizard-Generated File         ; C:/Users/joaqu/Documents/MIC1-1/MIC1/CONTROL_STORE.vhd                  ;         ;
 ; ULA_32bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/joaqu/Documents/MIC1-1/MIC1/ULA_32bit.bdf                      ;         ;
@@ -209,7 +209,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_n6a1.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/joaqu/Documents/MIC1-1/MIC1/db/altsyncram_n6a1.tdf             ;         ;
-; db/altsyncram_fcb2.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/joaqu/Documents/MIC1-1/MIC1/db/altsyncram_fcb2.tdf             ;         ;
+; db/altsyncram_hcb2.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/joaqu/Documents/MIC1-1/MIC1/db/altsyncram_hcb2.tdf             ;         ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
 
 
@@ -391,7 +391,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                   |FULLADDER_1bit:inst7|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIC1|CPU:inst1|DATAPATH:inst|ULA_32bit:inst|ULA_8bit:inst|ULA_1bit:inst|FULLADDER_1bit:inst7                         ; work         ;
 ;    |RAM:inst|                                   ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIC1|RAM:inst                                                                                                        ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIC1|RAM:inst|altsyncram:altsyncram_component                                                                        ; work         ;
-;          |altsyncram_fcb2:auto_generated|       ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIC1|RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated                                         ; work         ;
+;          |altsyncram_hcb2:auto_generated|       ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIC1|RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated                                         ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -402,7 +402,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                       ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF            ;
 +----------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+----------------+
 ; CPU:inst1|CONTROL_UNIT:inst1|CONTROL_STORE:inst8|altsyncram:altsyncram_component|altsyncram_n6a1:auto_generated|ALTSYNCRAM ; AUTO ; ROM            ; 512          ; 36           ; --           ; --           ; 18432 ; Microcode2.mif ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|ALTSYNCRAM                                         ; AUTO ; True Dual Port ; 4096         ; 8            ; 1024         ; 32           ; 32768 ; RAM1.mif       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|ALTSYNCRAM                                         ; AUTO ; True Dual Port ; 4096         ; 8            ; 1024         ; 32           ; 32768 ; RAM3.mif       ;
 +----------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+----------------+
 
 
@@ -525,7 +525,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------+
-; Source assignments for RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated ;
+; Source assignments for RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------+
 ; Assignment                      ; Value              ; From ; To                               ;
 +---------------------------------+--------------------+------+----------------------------------+
@@ -637,7 +637,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                   ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
-; INIT_FILE                          ; RAM1.mif             ; Untyped                   ;
+; INIT_FILE                          ; RAM3.mif             ; Untyped                   ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                   ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                   ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                   ;
@@ -650,7 +650,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                   ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                   ;
 ; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                   ;
-; CBXI_PARAMETER                     ; altsyncram_fcb2      ; Untyped                   ;
+; CBXI_PARAMETER                     ; altsyncram_hcb2      ; Untyped                   ;
 +------------------------------------+----------------------+---------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -691,7 +691,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -701,7 +701,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Jan 12 21:16:40 2025
+    Info: Processing started: Fri Jan 17 15:00:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIC1 -c MIC1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cpu2.bdf
@@ -829,7 +829,7 @@ Info (12133): Instantiated megafunction "RAM:inst|altsyncram:altsyncram_componen
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK0"
-    Info (12134): Parameter "init_file" = "RAM1.mif"
+    Info (12134): Parameter "init_file" = "RAM3.mif"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -849,9 +849,9 @@ Info (12133): Instantiated megafunction "RAM:inst|altsyncram:altsyncram_componen
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fcb2.tdf
-    Info (12023): Found entity 1: altsyncram_fcb2
-Info (12128): Elaborating entity "altsyncram_fcb2" for hierarchy "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hcb2.tdf
+    Info (12023): Found entity 1: altsyncram_hcb2
+Info (12128): Elaborating entity "altsyncram_hcb2" for hierarchy "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|OUT_B[31]" into a selector
     Warning (13048): Converted tri-state node "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|OUT_B[30]" into a selector
@@ -1022,61 +1022,61 @@ Warning (13044): Always-enabled tri-state buffer(s) removed
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MBR:inst3|REGISTER32bit:inst1|inst10[2]" to the node "MBR_OUT[2]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MBR:inst3|REGISTER32bit:inst1|inst10[1]" to the node "MBR_OUT[1]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MBR:inst3|REGISTER32bit:inst1|inst10[0]" to the node "MBR_OUT[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[31]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[30]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[29]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[28]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[27]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[26]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[25]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[24]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[23]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[22]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[21]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[20]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[19]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[18]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[17]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[16]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[15]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[14]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[13]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[12]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[11]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[10]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[9]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[8]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[7]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[6]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[5]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[4]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[3]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[2]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[1]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[0]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[31]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[30]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[29]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[28]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[27]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[26]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[25]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[24]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[23]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[22]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[21]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[20]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[19]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[18]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[17]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[16]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[15]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[14]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[13]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[12]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[11]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[10]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[9]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[8]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[7]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[6]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[5]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[4]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[3]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[2]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[1]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MDR:inst1|REGISTER32bit:inst1|inst10[0]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into a wire
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[11]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[10]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[9]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[8]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[7]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[6]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[5]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[4]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[3]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[2]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[1]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[0]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[9]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[8]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[7]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[6]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[5]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[4]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[3]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[2]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[1]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[0]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[11]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[10]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[9]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[8]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[7]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[6]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[5]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[4]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[3]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[2]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[1]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|inst10[0]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[9]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[8]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[7]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[6]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[5]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[4]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[3]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[2]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[1]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|inst10[0]" to the node "RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MBR:inst3|REGISTER32bit:inst1|inst10[7]" to the node "CPU:inst1|CONTROL_UNIT:inst1|inst2[7]" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MBR:inst3|REGISTER32bit:inst1|inst10[6]" to the node "CPU:inst1|CONTROL_UNIT:inst1|inst2[6]" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MBR:inst3|REGISTER32bit:inst1|inst10[5]" to the node "CPU:inst1|CONTROL_UNIT:inst1|inst2[5]" into an OR gate
@@ -1095,9 +1095,9 @@ Info (21057): Implemented 990 device resources after synthesis - the final resou
     Info (21061): Implemented 762 logic cells
     Info (21064): Implemented 44 RAM segments
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 234 warnings
-    Info: Peak virtual memory: 418 megabytes
-    Info: Processing ended: Sun Jan 12 21:16:45 2025
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 406 megabytes
+    Info: Processing ended: Fri Jan 17 15:00:28 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

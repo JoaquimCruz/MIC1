@@ -1,5 +1,5 @@
 Fitter report for MIC1
-Sun Jan 12 21:16:56 2025
+Fri Jan 17 15:00:35 2025
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Jan 12 21:16:56 2025           ;
+; Fitter Status                      ; Successful - Fri Jan 17 15:00:35 2025           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
 ; Top-level Entity Name              ; MIC1                                            ;
@@ -1195,7 +1195,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;                   |FULLADDER_1bit:inst7|        ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |MIC1|CPU:inst1|DATAPATH:inst|ULA_32bit:inst|ULA_8bit:inst|ULA_1bit:inst|FULLADDER_1bit:inst7                         ; work         ;
 ;    |RAM:inst|                                   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 32768       ; 8    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |MIC1|RAM:inst                                                                                                        ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 32768       ; 8    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |MIC1|RAM:inst|altsyncram:altsyncram_component                                                                        ; work         ;
-;          |altsyncram_fcb2:auto_generated|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 32768       ; 8    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |MIC1|RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated                                         ; work         ;
+;          |altsyncram_hcb2:auto_generated|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 32768       ; 8    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |MIC1|RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated                                         ; work         ;
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1763,14 +1763,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|REGISTER8bit:inst3|inst8                           ; 2       ;
 ; CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|REGISTER8bit:inst3|inst5                           ; 2       ;
 ; CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|PC:inst2|REGISTER32bit:inst1|REGISTER8bit:inst3|inst                            ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[0]                                          ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[1]                                          ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[2]                                          ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[3]                                          ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[4]                                          ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[5]                                          ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[6]                                          ; 2       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_a[7]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[0]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[1]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[2]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[3]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[4]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[5]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[6]                                          ; 2       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_a[7]                                          ; 2       ;
 ; CPU:inst1|CONTROL_UNIT:inst1|CONTROL_STORE:inst8|altsyncram:altsyncram_component|altsyncram_n6a1:auto_generated|q_a[5]  ; 2       ;
 ; CPU:inst1|CONTROL_UNIT:inst1|CONTROL_STORE:inst8|altsyncram:altsyncram_component|altsyncram_n6a1:auto_generated|q_a[6]  ; 2       ;
 ; CPU:inst1|CONTROL_UNIT:inst1|CONTROL_STORE:inst8|altsyncram:altsyncram_component|altsyncram_n6a1:auto_generated|q_a[24] ; 2       ;
@@ -2266,38 +2266,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|REGISTER8bit:inst3|inst8                           ; 1       ;
 ; CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|REGISTER8bit:inst3|inst5                           ; 1       ;
 ; CPU:inst1|DATAPATH:inst|BANK_REGS:inst2|MAR:inst|REGISTER32bit:inst1|REGISTER8bit:inst3|inst                            ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[24]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[16]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[8]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[0]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[25]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[17]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[9]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[1]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[26]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[18]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[10]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[2]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[27]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[19]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[11]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[3]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[28]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[20]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[12]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[4]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[29]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[21]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[13]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[5]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[30]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[22]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[14]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[6]                                          ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[31]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[23]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[15]                                         ; 1       ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|q_b[7]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[24]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[16]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[8]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[0]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[25]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[17]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[9]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[1]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[26]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[18]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[10]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[2]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[27]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[19]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[11]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[3]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[28]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[20]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[12]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[4]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[29]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[21]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[13]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[5]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[30]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[22]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[14]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[6]                                          ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[31]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[23]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[15]                                         ; 1       ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|q_b[7]                                          ; 1       ;
 +-------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -2307,7 +2307,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                       ; Type ; Mode           ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF            ; Location                                                                                               ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +----------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------------+--------------------------------------------------------------------------------------------------------+----------------------+-----------------+-----------------+
 ; CPU:inst1|CONTROL_UNIT:inst1|CONTROL_STORE:inst8|altsyncram:altsyncram_component|altsyncram_n6a1:auto_generated|ALTSYNCRAM ; AUTO ; ROM            ; Single Clock ; 512          ; 36           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 18432 ; 512                         ; 36                          ; --                          ; --                          ; 18432               ; 4    ; Microcode2.mif ; M4K_X17_Y19, M4K_X17_Y20, M4K_X17_Y13, M4K_X17_Y17                                                     ; Don't care           ; Don't care      ; Don't care      ;
-; RAM:inst|altsyncram:altsyncram_component|altsyncram_fcb2:auto_generated|ALTSYNCRAM                                         ; AUTO ; True Dual Port ; Single Clock ; 4096         ; 8            ; 1024         ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 32768 ; 4096                        ; 8                           ; 1024                        ; 32                          ; 32768               ; 8    ; RAM1.mif       ; M4K_X17_Y23, M4K_X17_Y21, M4K_X17_Y26, M4K_X17_Y22, M4K_X41_Y22, M4K_X17_Y25, M4K_X17_Y24, M4K_X41_Y21 ; Don't care           ; Don't care      ; Don't care      ;
+; RAM:inst|altsyncram:altsyncram_component|altsyncram_hcb2:auto_generated|ALTSYNCRAM                                         ; AUTO ; True Dual Port ; Single Clock ; 4096         ; 8            ; 1024         ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 32768 ; 4096                        ; 8                           ; 1024                        ; 32                          ; 32768               ; 8    ; RAM3.mif       ; M4K_X17_Y23, M4K_X17_Y21, M4K_X17_Y26, M4K_X17_Y22, M4K_X41_Y22, M4K_X17_Y25, M4K_X17_Y24, M4K_X41_Y21 ; Don't care           ; Don't care      ; Don't care      ;
 +----------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------------+--------------------------------------------------------------------------------------------------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -2767,19 +2767,19 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  35 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 11% of the available device resources in the region that extends from location X12_Y14 to location X24_Y27
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 182 output pins without output pin load capacitance assignment
     Info (306007): Pin "DATA_MEM_write_enable" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2973,9 +2973,9 @@ Warning (169174): The Reserve All Unused Pins setting has not been specified, an
 Info (144001): Generated suppressed messages file C:/Users/joaqu/Documents/MIC1-1/MIC1/MIC1.fit.smsg
 Info: Quartus II 32-bit Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 471 megabytes
-    Info: Processing ended: Sun Jan 12 21:16:57 2025
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Fri Jan 17 15:00:35 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+

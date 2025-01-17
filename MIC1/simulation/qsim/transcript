@@ -2,98 +2,1501 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module MDR
+# -- Compiling module MIC1
 # 
 # Top level modules:
-# 	MDR
+# 	MIC1
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module MDR_vlg_sample_tst
-# -- Compiling module MDR_vlg_check_tst
-# -- Compiling module MDR_vlg_vec_tst
+# -- Compiling module MIC1_vlg_sample_tst
+# -- Compiling module MIC1_vlg_check_tst
+# -- Compiling module MIC1_vlg_vec_tst
 # 
 # Top level modules:
-# 	MDR_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.MDR_vlg_vec_tst 
-# Loading work.MDR_vlg_vec_tst
-# Loading work.MDR
-# Loading cycloneii_ver.cycloneii_io
-# Loading cycloneii_ver.cycloneii_mux21
-# Loading cycloneii_ver.cycloneii_dffe
-# Loading cycloneii_ver.cycloneii_asynch_io
+# 	MIC1_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.MIC1_vlg_vec_tst 
+# Loading work.MIC1_vlg_vec_tst
+# Loading work.MIC1
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
-# Loading work.MDR_vlg_sample_tst
-# Loading work.MDR_vlg_check_tst
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading work.MIC1_vlg_sample_tst
+# Loading work.MIC1_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
 # Loading instances from MIC1_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
 # Loading timing data from MIC1_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /MDR_vlg_vec_tst File: MIC1.vt
-# ERROR! Vector Mismatch for output port OUT_B[0] :: @time = 460000.000 ps
+#    Time: 0 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst File: MIC1.vt
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: joaqu  Hostname: JOAQUIM  ProcessID: 26992
+# 
+#           Attempting to use alternate WLF file "./wlftjht2s2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftjht2s2
+# 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1715 ps, d:1725 ps, 234 ps );
+#    Time: 1725 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst1|inst1|inst8|altsyncram_component|auto_generated|ram_block1a16 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(476): $setup( d[0]:1704 ps, posedge clk &&& reset:1731 ps, 35 ps );
+#    Time: 1731 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a7 /datain_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1715 ps, d:1732 ps, 234 ps );
+#    Time: 1732 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst1|inst1|inst8|altsyncram_component|auto_generated|ram_block1a16 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1728 ps, d:1732 ps, 234 ps );
+#    Time: 1732 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a4 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1740 ps, d:1751 ps, 234 ps );
+#    Time: 1751 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a4 /datain_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(476): $setup( d:1749 ps, posedge clk &&& reset:1752 ps, 35 ps );
+#    Time: 1752 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /datain_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1748 ps, d:1763 ps, 234 ps );
+#    Time: 1763 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a1 /datain_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1740 ps, d:1772 ps, 234 ps );
+#    Time: 1772 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a4 /datain_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1722 ps, d:1779 ps, 234 ps );
+#    Time: 1779 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst1|inst1|inst8|altsyncram_component|auto_generated|ram_block1a0 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1715 ps, d:1787 ps, 234 ps );
+#    Time: 1787 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst1|inst1|inst8|altsyncram_component|auto_generated|ram_block1a16 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1766 ps, d:1788 ps, 234 ps );
+#    Time: 1788 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a2 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1768 ps, d:1790 ps, 234 ps );
+#    Time: 1790 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1722 ps, d:1806 ps, 234 ps );
+#    Time: 1806 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a6 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1750 ps, d:1806 ps, 234 ps );
+#    Time: 1806 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a6 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1760 ps, d:1808 ps, 234 ps );
+#    Time: 1808 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a7 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1732 ps, d:1813 ps, 234 ps );
+#    Time: 1813 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst1|inst1|inst8|altsyncram_component|auto_generated|ram_block1a4 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1740 ps, d:1816 ps, 234 ps );
+#    Time: 1816 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1768 ps, d:1816 ps, 234 ps );
+#    Time: 1816 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1732 ps, d:1817 ps, 234 ps );
+#    Time: 1817 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a7 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1722 ps, d:1817 ps, 234 ps );
+#    Time: 1817 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a6 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1756 ps, d:1818 ps, 234 ps );
+#    Time: 1818 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a4 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1766 ps, d:1818 ps, 234 ps );
+#    Time: 1818 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a2 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1764 ps, d:1824 ps, 234 ps );
+#    Time: 1824 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a1 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1728 ps, d:1825 ps, 234 ps );
+#    Time: 1825 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a4 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1722 ps, d:1835 ps, 234 ps );
+#    Time: 1835 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a6 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1736 ps, d:1836 ps, 234 ps );
+#    Time: 1836 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a1 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1744 ps, d:1838 ps, 234 ps );
+#    Time: 1838 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a7 /datain_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1740 ps, d:1842 ps, 234 ps );
+#    Time: 1842 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1740 ps, d:1845 ps, 234 ps );
+#    Time: 1845 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1764 ps, d:1845 ps, 234 ps );
+#    Time: 1845 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a1 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1766 ps, d:1845 ps, 234 ps );
+#    Time: 1845 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a2 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1764 ps, d:1846 ps, 234 ps );
+#    Time: 1846 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a1 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1768 ps, d:1849 ps, 234 ps );
+#    Time: 1849 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1768 ps, d:1850 ps, 234 ps );
+#    Time: 1850 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1736 ps, d:1852 ps, 234 ps );
+#    Time: 1852 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a1 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1738 ps, d:1852 ps, 234 ps );
+#    Time: 1852 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a2 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1756 ps, d:1855 ps, 234 ps );
+#    Time: 1855 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a4 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1736 ps, d:1873 ps, 234 ps );
+#    Time: 1873 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a1 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1740 ps, d:1880 ps, 234 ps );
+#    Time: 1880 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a5 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1739 ps, d:1882 ps, 234 ps );
+#    Time: 1882 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a0 /datain_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1738 ps, d:1883 ps, 234 ps );
+#    Time: 1883 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a2 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1738 ps, d:1884 ps, 234 ps );
+#    Time: 1884 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a2 /addr_a_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1755 ps, d:1932 ps, 234 ps );
+#    Time: 1932 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a0 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1756 ps, d:1933 ps, 234 ps );
+#    Time: 1933 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a4 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1745 ps, d:1958 ps, 234 ps );
+#    Time: 1958 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a3 /datain_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1761 ps, d:1960 ps, 234 ps );
+#    Time: 1960 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a3 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1761 ps, d:1971 ps, 234 ps );
+#    Time: 1971 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a3 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1761 ps, d:1982 ps, 234 ps );
+#    Time: 1982 ps  Iteration: 1  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a3 /addr_b_register
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1761 ps, d:1987 ps, 234 ps );
+#    Time: 1987 ps  Iteration: 0  Instance: /MIC1_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a3 /addr_b_register
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 10000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 10000.000 ps
+#      Expected value = 000000010
+#      Real value = 000000000
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 150000.000 ps
+#      Expected value = 00000000000000000000000000000001
+#      Real value = 00000000000000000000000000000010
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 150000.000 ps
+#      Expected value = 00000000000000000000000000000001
+#      Real value = 00000000000000000000000000000010
+# ERROR! Vector Mismatch for output port PC[0] :: @time = 150000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[3] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000000000000001
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 185000.000 ps
+#      Expected value = 00000000000000000000000000000010
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[18] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[20] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[26] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 185000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000000010000000000000000000000000000
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 185000.000 ps
+#      Expected value = 000000000
+#      Real value = 000000010
+# ERROR! Vector Mismatch for output port MBR_OUT[0] :: @time = 200000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010011
+# ERROR! Vector Mismatch for output port MBR_OUT[1] :: @time = 200000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010011
+# ERROR! Vector Mismatch for output port MBR_OUT[4] :: @time = 200000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010011
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 235000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[4] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000000000000010
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[18] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[20] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[26] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 235000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 235000.000 ps
+#      Expected value = 000000010
+#      Real value = 000000000
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 250000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[5] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000000000000011
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 250000.000 ps
+#      Expected value = 000000010
+#      Real value = 000010011
+# ERROR! Vector Mismatch for output port MPC[4] :: @time = 250000.000 ps
+#      Expected value = 000000010
+#      Real value = 000010011
+# ERROR! Vector Mismatch for output port PC[0] :: @time = 250000.000 ps
+#      Expected value = 00000000000000000000000000000001
+#      Real value = 00000000000000000000000000000010
+# ERROR! Vector Mismatch for output port PC[1] :: @time = 250000.000 ps
+#      Expected value = 00000000000000000000000000000001
+#      Real value = 00000000000000000000000000000010
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 285000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000101100000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 285000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000101100000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[32] :: @time = 285000.000 ps
+#      Expected value = 000000010000000000000000000000000000
+#      Real value = 000101100000001101010000001000010001
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 285000.000 ps
+#      Expected value = 000000010
+#      Real value = 000101100
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 285000.000 ps
+#      Expected value = 000000010
+#      Real value = 000101100
+# ERROR! Vector Mismatch for output port MPC[5] :: @time = 285000.000 ps
+#      Expected value = 000000010
+#      Real value = 000101100
+# ERROR! Vector Mismatch for output port MBR_OUT[0] :: @time = 300000.000 ps
+#      Expected value = 00010011
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port MBR_OUT[1] :: @time = 300000.000 ps
+#      Expected value = 00010011
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port MBR_OUT[4] :: @time = 300000.000 ps
+#      Expected value = 00010011
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 335000.000 ps
+#      Expected value = 00000000000000000000000000000010
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[15] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[23] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[26] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 335000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 385000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[19] :: @time = 385000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101110000000111001000000000000011
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 385000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 000101110000000111001000000000000011
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 385000.000 ps
+#      Expected value = 000010011
+#      Real value = 000101110
+# ERROR! Vector Mismatch for output port MPC[4] :: @time = 385000.000 ps
+#      Expected value = 000010011
+#      Real value = 000101110
+# ERROR! Vector Mismatch for output port PC[0] :: @time = 385000.000 ps
+#      Expected value = 00000000000000000000000000000010
+#      Real value = 00000000000000000000000000000011
+# ERROR! Vector Mismatch for output port C_BUS[4] :: @time = 435000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 435000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port C_BUS[6] :: @time = 435000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port C_BUS[7] :: @time = 435000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port C_BUS[8] :: @time = 435000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port C_BUS[9] :: @time = 435000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 435000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[2] :: @time = 435000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[5] :: @time = 435000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[7] :: @time = 435000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 435000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[31] :: @time = 435000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 435000.000 ps
+#      Expected value = 000010100
+#      Real value = 000100010
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 435000.000 ps
+#      Expected value = 000010100
+#      Real value = 000100010
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[4] :: @time = 450000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[7] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[5] :: @time = 450000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[8] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[6] :: @time = 450000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[11] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[7] :: @time = 450000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[12] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[8] :: @time = 450000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[13] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[9] :: @time = 450000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[15] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000001111110000
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 485000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 485000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port MIR[10] :: @time = 485000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 000100011000001101010000010010000100
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 485000.000 ps
+#      Expected value = 000010100
+#      Real value = 000100011
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 500000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001000010
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[0] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[16] :: @time = 460000.000 ps
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[1] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[17] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[2] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[19] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[3] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[20] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[4] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[23] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[5] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[24] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[6] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[25] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[7] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[27] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[9] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[28] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[11] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-# ERROR! Vector Mismatch for output port OUT_B[31] :: @time = 460000.000 ps
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[14] :: @time = 500000.000 ps
 #      Expected value = 00000000000000000000000000000000
-#      Real value = 10011011100110111011100110111001
-#          20 mismatched vectors : Simulation failed !
-# ** Note: $finish    : MIC1.vt(1329)
-#    Time: 540 ns  Iteration: 0  Instance: /MDR_vlg_vec_tst/tb_out
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[15] :: @time = 500000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 535000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000100
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[6] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[15] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[23] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 535000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 535000.000 ps
+#      Expected value = 000011010
+#      Real value = 000100101
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 535000.000 ps
+#      Expected value = 000011010
+#      Real value = 000100101
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 535000.000 ps
+#      Expected value = 000011010
+#      Real value = 000100101
+# ERROR! Vector Mismatch for output port DATA_MEM_write_enable :: @time = 550000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port PC[0] :: @time = 550000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000000000000100
+# ERROR! Vector Mismatch for output port PC[1] :: @time = 550000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000000000000100
+# ERROR! Vector Mismatch for output port PC[2] :: @time = 550000.000 ps
+#      Expected value = 00000000000000000000000000000011
+#      Real value = 00000000000000000000000000000100
+# ERROR! Vector Mismatch for output port C_BUS[3] :: @time = 585000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port C_BUS[11] :: @time = 585000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port C_BUS[14] :: @time = 585000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port C_BUS[15] :: @time = 585000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000001100101011111110
+# ERROR! Vector Mismatch for output port MIR[13] :: @time = 585000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MBR_OUT[0] :: @time = 600000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010011
+# ERROR! Vector Mismatch for output port MBR_OUT[1] :: @time = 600000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010011
+# ERROR! Vector Mismatch for output port MBR_OUT[4] :: @time = 600000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010011
+# ERROR! Vector Mismatch for output port MIR[19] :: @time = 635000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[26] :: @time = 635000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 635000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 635000.000 ps
+#      Expected value = 000011011
+#      Real value = 000000000
+# ERROR! Vector Mismatch for output port C_BUS[4] :: @time = 735000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 735000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port C_BUS[6] :: @time = 735000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port C_BUS[7] :: @time = 735000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port C_BUS[8] :: @time = 735000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port C_BUS[9] :: @time = 735000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[2] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[5] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[7] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[15] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[23] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 735000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 000101101000100101001000000000000011
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 735000.000 ps
+#      Expected value = 000010111
+#      Real value = 000101101
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[4] :: @time = 785000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[5] :: @time = 785000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[7] :: @time = 785000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[8] :: @time = 785000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[9] :: @time = 785000.000 ps
+#      Expected value = 00000000000000000000001111110000
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port C_BUS[4] :: @time = 835000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 835000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port C_BUS[7] :: @time = 835000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port C_BUS[8] :: @time = 835000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port C_BUS[9] :: @time = 835000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 835000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[5] :: @time = 835000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[10] :: @time = 835000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 835000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[19] :: @time = 835000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 835000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 835000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100010000001111000000000010100110
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 835000.000 ps
+#      Expected value = 000011000
+#      Real value = 000100010
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 835000.000 ps
+#      Expected value = 000011000
+#      Real value = 000100010
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[4] :: @time = 885000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[5] :: @time = 885000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[7] :: @time = 885000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[8] :: @time = 885000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[9] :: @time = 885000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000001111110001
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 885000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 000100011000001101010000010010000100
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 885000.000 ps
+#      Expected value = 000011000
+#      Real value = 000100011
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[0] :: @time = 900000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000000001000010
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[1] :: @time = 900000.000 ps
+#      Expected value = 00000000000000000000000001000001
+#      Real value = 00000000000000000000000001000010
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[0] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[1] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[3] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[4] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[5] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[6] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[7] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[9] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[11] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[14] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[15] :: @time = 900000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 985000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 985000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[6] :: @time = 985000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 985000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 985000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 985000.000 ps
+#      Expected value = 000011001
+#      Real value = 000000010
+# ERROR! Vector Mismatch for output port PC[0] :: @time = 985000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000000000111
+# ERROR! Vector Mismatch for output port PC[1] :: @time = 985000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000000000111
+# ERROR! Vector Mismatch for output port DATA_MEM_write_enable :: @time = 1000000.000 ps
+#      Expected value = 1
+#      Real value = 0
+# ERROR! Vector Mismatch for output port MBR_OUT[2] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10110110
+# ERROR! Vector Mismatch for output port MBR_OUT[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10110110
+# ERROR! Vector Mismatch for output port MBR_OUT[7] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10110110
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[4] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[7] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[9] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[11] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[14] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port C_BUS[15] :: @time = 1035000.000 ps
+#      Expected value = 00000000000000001100101011111110
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 1035000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 1035000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 1035000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[13] :: @time = 1035000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 1035000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 1035000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 1035000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 1035000.000 ps
+#      Expected value = 000000010
+#      Real value = 000000001
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 1035000.000 ps
+#      Expected value = 000000010
+#      Real value = 000000001
+# ERROR! Vector Mismatch for output port MPC[4] :: @time = 1050000.000 ps
+#      Expected value = 000000010
+#      Real value = 010110110
+# ERROR! Vector Mismatch for output port MPC[7] :: @time = 1050000.000 ps
+#      Expected value = 000000010
+#      Real value = 010110110
+# ERROR! Vector Mismatch for output port PC[2] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port PC[3] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000000001000
+# ERROR! Vector Mismatch for output port MBR_OUT[0] :: @time = 1085000.000 ps
+#      Expected value = 00010011
+#      Real value = 10110110
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 1085000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011011101000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 1085000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011011101000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[31] :: @time = 1085000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011011101000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[33] :: @time = 1085000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011011101000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[34] :: @time = 1085000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011011101000001101010000001000010001
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 1085000.000 ps
+#      Expected value = 000000010
+#      Real value = 011011101
+# ERROR! Vector Mismatch for output port MPC[6] :: @time = 1085000.000 ps
+#      Expected value = 000000010
+#      Real value = 011011101
+# ERROR! Vector Mismatch for output port MBR_OUT[1] :: @time = 1100000.000 ps
+#      Expected value = 00010011
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port MBR_OUT[4] :: @time = 1100000.000 ps
+#      Expected value = 00010011
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 1135000.000 ps
+#      Expected value = 00000000000000000000000000000101
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 1135000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011011110000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 1135000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011011110000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 1135000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011011110000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 1135000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011011110000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[26] :: @time = 1135000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011011110000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 1135000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011011110000100101001000000000000011
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 1135000.000 ps
+#      Expected value = 000000000
+#      Real value = 011011110
+# ERROR! Vector Mismatch for output port C_BUS[9] :: @time = 1150000.000 ps
+#      Expected value = 00000000000000000000000000000101
+#      Real value = 00000000000000000000001000000000
+# ERROR! Vector Mismatch for output port C_BUS[4] :: @time = 1235000.000 ps
+#      Expected value = 00000000000000000000000000000110
+#      Real value = 00000000000000000000001111110010
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 1235000.000 ps
+#      Expected value = 00000000000000000000000000000110
+#      Real value = 00000000000000000000001111110010
+# ERROR! Vector Mismatch for output port C_BUS[6] :: @time = 1235000.000 ps
+#      Expected value = 00000000000000000000000000000110
+#      Real value = 00000000000000000000001111110010
+# ERROR! Vector Mismatch for output port C_BUS[7] :: @time = 1235000.000 ps
+#      Expected value = 00000000000000000000000000000110
+#      Real value = 00000000000000000000001111110010
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 1235000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 011100000000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[2] :: @time = 1235000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 011100000000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[7] :: @time = 1235000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 011100000000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 1235000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 011100000000001111000000000010100110
+# ERROR! Vector Mismatch for output port MIR[31] :: @time = 1235000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 011100000000001111000000000010100110
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 1235000.000 ps
+#      Expected value = 000010100
+#      Real value = 011100000
+# ERROR! Vector Mismatch for output port MPC[4] :: @time = 1235000.000 ps
+#      Expected value = 000010100
+#      Real value = 011100000
+# ERROR! Vector Mismatch for output port MBR_OUT[1] :: @time = 1285000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000010
+# ERROR! Vector Mismatch for output port MIR[14] :: @time = 1285000.000 ps
+#      Expected value = 000010100000001101010000001000010001
+#      Real value = 011100001000001101010100000000000001
+# ERROR! Vector Mismatch for output port PC[1] :: @time = 1285000.000 ps
+#      Expected value = 00000000000000000000000000000110
+#      Real value = 00000000000000000000000000001001
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 1335000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000001100100
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 1335000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100010000000101000000001000010000
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 1335000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100010000000101000000001000010000
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 1335000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100010000000101000000001000010000
+# ERROR! Vector Mismatch for output port MIR[15] :: @time = 1335000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100010000000101000000001000010000
+# ERROR! Vector Mismatch for output port MIR[23] :: @time = 1335000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100010000000101000000001000010000
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 1335000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100010000000101000000001000010000
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 1335000.000 ps
+#      Expected value = 000011010
+#      Real value = 011100010
+# ERROR! Vector Mismatch for output port PC[5] :: @time = 1350000.000 ps
+#      Expected value = 00000000000000000000000000000110
+#      Real value = 00000000000000000000000001100100
+# ERROR! Vector Mismatch for output port PC[6] :: @time = 1350000.000 ps
+#      Expected value = 00000000000000000000000000000110
+#      Real value = 00000000000000000000000001100100
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 1385000.000 ps
+#      Expected value = 00000000000000000000000100000000
+#      Real value = 00000000000000000000000001100101
+# ERROR! Vector Mismatch for output port C_BUS[8] :: @time = 1385000.000 ps
+#      Expected value = 00000000000000000000000100000000
+#      Real value = 00000000000000000000000001100101
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 1385000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100011000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 1385000.000 ps
+#      Expected value = 000011010000100101001000000000000011
+#      Real value = 011100011000001101010000001000010001
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 1400000.000 ps
+#      Expected value = 00000000000000000000000100000000
+#      Real value = 00000000000000000000000001100110
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 1435000.000 ps
+#      Expected value = 00000000000000000000000000000001
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[19] :: @time = 1435000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 011100100000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[23] :: @time = 1435000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 011100100000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 1435000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 011100100000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 1435000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 011100100000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 1435000.000 ps
+#      Expected value = 000011011000000111001000000000000011
+#      Real value = 011100100000100101001000000000000011
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 1435000.000 ps
+#      Expected value = 000011011
+#      Real value = 011100100
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 1435000.000 ps
+#      Expected value = 000011011
+#      Real value = 011100100
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 1435000.000 ps
+#      Expected value = 000011011
+#      Real value = 011100100
+# ERROR! Vector Mismatch for output port C_BUS[4] :: @time = 1535000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001100110
+# ERROR! Vector Mismatch for output port C_BUS[7] :: @time = 1535000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001100110
+# ERROR! Vector Mismatch for output port C_BUS[9] :: @time = 1535000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001100110
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 1535000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 011100110000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[2] :: @time = 1535000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 011100110000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[5] :: @time = 1535000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 011100110000001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[7] :: @time = 1535000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 011100110000001101010000001000010001
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 1585000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001000000
+# ERROR! Vector Mismatch for output port MIR[13] :: @time = 1585000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 011100111000001111110010000000000100
+# ERROR! Vector Mismatch for output port MIR[17] :: @time = 1585000.000 ps
+#      Expected value = 000010111000001111000000000010100110
+#      Real value = 011100111000001111110010000000000100
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 1635000.000 ps
+#      Expected value = 00000000000000000000000001000010
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 1635000.000 ps
+#      Expected value = 00000000000000000000000001000010
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 1635000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 011101000000001101010010000010000111
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[4] :: @time = 1650000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[5] :: @time = 1650000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[7] :: @time = 1650000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[8] :: @time = 1650000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[9] :: @time = 1650000.000 ps
+#      Expected value = 00000000000000000000001111110001
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 1685000.000 ps
+#      Expected value = 00000000000000000000000001000011
+#      Real value = 00000000000000000000000001100111
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[0] :: @time = 1685000.000 ps
+#      Expected value = 00000000000000000000000001000010
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[1] :: @time = 1685000.000 ps
+#      Expected value = 00000000000000000000000001000010
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[5] :: @time = 1685000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001100100
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[6] :: @time = 1685000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001100100
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 1685000.000 ps
+#      Expected value = 000011000000001101010000010010000100
+#      Real value = 011101001000001101010000001000010001
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 1685000.000 ps
+#      Expected value = 000011000
+#      Real value = 011101001
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 1700000.000 ps
+#      Expected value = 00000000000000000000000001000011
+#      Real value = 00000000000000000000000001101100
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 1735000.000 ps
+#      Expected value = 00000000000000000000000000000111
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 1735000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101010000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 1735000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101010000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[15] :: @time = 1735000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101010000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 1735000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101010000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 1735000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101010000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 1735000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101010000100101001000000000000011
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 1735000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101010000100101001000000000000011
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 1735000.000 ps
+#      Expected value = 000011001
+#      Real value = 011101010
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 1735000.000 ps
+#      Expected value = 000011001
+#      Real value = 011101010
+# ERROR! Vector Mismatch for output port C_BUS[3] :: @time = 1785000.000 ps
+#      Expected value = 00000000000000000000000000001000
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[19] :: @time = 1785000.000 ps
+#      Expected value = 000011001000001101010000001001010001
+#      Real value = 011101011000000111001000000000000011
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 1835000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001000011
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 1835000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001000011
+# ERROR! Vector Mismatch for output port MIR[2] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MIR[6] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MIR[8] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MIR[13] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 1835000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101100000001111010000000101000100
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 1835000.000 ps
+#      Expected value = 000000010
+#      Real value = 011101100
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 1835000.000 ps
+#      Expected value = 000000010
+#      Real value = 011101100
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[1] :: @time = 1850000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001000011
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[2] :: @time = 1850000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000001000011
+# ERROR! Vector Mismatch for output port DATA_MEM_write_enable :: @time = 1885000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port MBR_OUT[1] :: @time = 1885000.000 ps
+#      Expected value = 10110110
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port MBR_OUT[2] :: @time = 1885000.000 ps
+#      Expected value = 10110110
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port MBR_OUT[5] :: @time = 1885000.000 ps
+#      Expected value = 10110110
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port MBR_OUT[7] :: @time = 1885000.000 ps
+#      Expected value = 10110110
+#      Real value = 00000000
+# ERROR! Vector Mismatch for output port MIR[7] :: @time = 1885000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101101000000101000000010010000000
+# ERROR! Vector Mismatch for output port MIR[10] :: @time = 1885000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101101000000101000000010010000000
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 1885000.000 ps
+#      Expected value = 000000010000000101000010000000000000
+#      Real value = 011101101000000101000000010010000000
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 1885000.000 ps
+#      Expected value = 000000010
+#      Real value = 011101101
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 1935000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011101110000000101000000000101001000
+# ERROR! Vector Mismatch for output port MIR[3] :: @time = 1935000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011101110000000101000000000101001000
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 1935000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011101110000000101000000000101001000
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 1935000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011101110000000101000000000101001000
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 1935000.000 ps
+#      Expected value = 000000000100001101010000001000010001
+#      Real value = 011101110000000101000000000101001000
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 1935000.000 ps
+#      Expected value = 000000001
+#      Real value = 011101110
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 1935000.000 ps
+#      Expected value = 000000001
+#      Real value = 011101110
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[3] :: @time = 1950000.000 ps
+#      Expected value = 00000000000000000000000000000100
+#      Real value = 00000000000000000000000000001010
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 1985000.000 ps
+#      Expected value = 00000000000000000000000000001001
+#      Real value = 00000000000000000000000001000100
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 1985000.000 ps
+#      Expected value = 00000000000000000000000000001001
+#      Real value = 00000000000000000000000001000100
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 1985000.000 ps
+#      Expected value = 010110110
+#      Real value = 011101111
+# ERROR! Vector Mismatch for output port PC[1] :: @time = 1985000.000 ps
+#      Expected value = 00000000000000000000000000001000
+#      Real value = 00000000000000000000000001100111
+# ERROR! Vector Mismatch for output port PC[2] :: @time = 1985000.000 ps
+#      Expected value = 00000000000000000000000000001000
+#      Real value = 00000000000000000000000001100111
+# ERROR! Vector Mismatch for output port PC[3] :: @time = 1985000.000 ps
+#      Expected value = 00000000000000000000000000001000
+#      Real value = 00000000000000000000000001100111
+# ERROR! Vector Mismatch for output port DATA_MEM_ADDR[2] :: @time = 2000000.000 ps
+#      Expected value = 00000000000000000000000001000010
+#      Real value = 00000000000000000000000001000100
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 2035000.000 ps
+#      Expected value = 010110111000001101010000001000010001
+#      Real value = 011110000000000101000000000101000101
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 2035000.000 ps
+#      Expected value = 010110111000001101010000001000010001
+#      Real value = 011110000000000101000000000101000101
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 2035000.000 ps
+#      Expected value = 010110111000001101010000001000010001
+#      Real value = 011110000000000101000000000101000101
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2035000.000 ps
+#      Expected value = 010110111
+#      Real value = 011110000
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 2035000.000 ps
+#      Expected value = 010110111
+#      Real value = 011110000
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 2035000.000 ps
+#      Expected value = 010110111
+#      Real value = 011110000
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 2085000.000 ps
+#      Expected value = 00000000000000000000000000001010
+#      Real value = 00000000000000000000000001101000
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 2100000.000 ps
+#      Expected value = 00000000000000000000000000001010
+#      Real value = 00000000000000000000000001101001
+# ERROR! Vector Mismatch for output port PC[0] :: @time = 2100000.000 ps
+#      Expected value = 00000000000000000000000000001001
+#      Real value = 00000000000000000000000001101000
+# ERROR! Vector Mismatch for output port MIR[11] :: @time = 2135000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000010000000101000000100000000111
+# ERROR! Vector Mismatch for output port MIR[15] :: @time = 2135000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000010000000101000000100000000111
+# ERROR! Vector Mismatch for output port MIR[23] :: @time = 2135000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000010000000101000000100000000111
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 2135000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000010000000101000000100000000111
+# ERROR! Vector Mismatch for output port MIR[30] :: @time = 2135000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000010000000101000000100000000111
+# ERROR! Vector Mismatch for output port MIR[32] :: @time = 2135000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000010000000101000000100000000111
+# ERROR! Vector Mismatch for output port MIR[34] :: @time = 2135000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000010000000101000000100000000111
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 2135000.000 ps
+#      Expected value = 010111000
+#      Real value = 000000010
+# ERROR! Vector Mismatch for output port MPC[3] :: @time = 2135000.000 ps
+#      Expected value = 010111000
+#      Real value = 000000010
+# ERROR! Vector Mismatch for output port MPC[5] :: @time = 2135000.000 ps
+#      Expected value = 010111000
+#      Real value = 000000010
+# ERROR! Vector Mismatch for output port MPC[7] :: @time = 2135000.000 ps
+#      Expected value = 010111000
+#      Real value = 000000010
+# ERROR! Vector Mismatch for output port MBR_OUT[0] :: @time = 2150000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010101
+# ERROR! Vector Mismatch for output port MBR_OUT[2] :: @time = 2150000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010101
+# ERROR! Vector Mismatch for output port MBR_OUT[4] :: @time = 2150000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010101
+# ERROR! Vector Mismatch for output port C_BUS[3] :: @time = 2185000.000 ps
+#      Expected value = 00000000000000000000001000000000
+#      Real value = 00000000000000000000000001101001
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 2185000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 2185000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 2185000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 2185000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 2185000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port MIR[26] :: @time = 2185000.000 ps
+#      Expected value = 010111000000100101001000000000000011
+#      Real value = 000000000100001101010000001000010001
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 2200000.000 ps
+#      Expected value = 00000000000000000000001000000000
+#      Real value = 00000000000000000000000001101010
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2200000.000 ps
+#      Expected value = 010111000
+#      Real value = 000010101
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 2200000.000 ps
+#      Expected value = 010111000
+#      Real value = 000010101
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 2235000.000 ps
+#      Expected value = 00000000000000000000000000000010
+#      Real value = 00000000000000000000000001000001
+# ERROR! Vector Mismatch for output port MIR[19] :: @time = 2235000.000 ps
+#      Expected value = 010111001000000111001000000000000011
+#      Real value = 000100001000000101001000000000000101
+# ERROR! Vector Mismatch for output port MIR[5] :: @time = 2285000.000 ps
+#      Expected value = 010111001000000111001000000000000011
+#      Real value = 000100010000001111000000000010100011
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2285000.000 ps
+#      Expected value = 010111001
+#      Real value = 000100010
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 2335000.000 ps
+#      Expected value = 00000000000000000000001111110010
+#      Real value = 00000000000000000000000001000101
+# ERROR! Vector Mismatch for output port MIR[5] :: @time = 2335000.000 ps
+#      Expected value = 010111010000001111000000000010100110
+#      Real value = 000100011000001101010000010010000100
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 2335000.000 ps
+#      Expected value = 010111010000001111000000000010100110
+#      Real value = 000100011000001101010000010010000100
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2335000.000 ps
+#      Expected value = 010111010
+#      Real value = 000100011
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 2385000.000 ps
+#      Expected value = 010111010000001111000000000010100110
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[2] :: @time = 2385000.000 ps
+#      Expected value = 010111010000001111000000000010100110
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[7] :: @time = 2385000.000 ps
+#      Expected value = 010111010000001111000000000010100110
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 2385000.000 ps
+#      Expected value = 010111010000001111000000000010100110
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 2385000.000 ps
+#      Expected value = 010111010000001111000000000010100110
+#      Real value = 000100101000001101010000001001010001
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 2385000.000 ps
+#      Expected value = 010111010
+#      Real value = 000100101
+# ERROR! Vector Mismatch for output port C_BUS[3] :: @time = 2435000.000 ps
+#      Expected value = 00000000000000000000000000001010
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 2435000.000 ps
+#      Expected value = 010111011000001101010100000000000001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[13] :: @time = 2435000.000 ps
+#      Expected value = 010111011000001101010100000000000001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[14] :: @time = 2435000.000 ps
+#      Expected value = 010111011000001101010100000000000001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 2435000.000 ps
+#      Expected value = 010111011000001101010100000000000001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 2435000.000 ps
+#      Expected value = 010111011000001101010100000000000001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 2435000.000 ps
+#      Expected value = 010111011000001101010100000000000001
+#      Real value = 000000010000000101000010000000000000
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2435000.000 ps
+#      Expected value = 010111011
+#      Real value = 000000010
+# ERROR! Vector Mismatch for output port MBR_OUT[3] :: @time = 2450000.000 ps
+#      Expected value = 00000010
+#      Real value = 10011001
+# ERROR! Vector Mismatch for output port MBR_OUT[7] :: @time = 2450000.000 ps
+#      Expected value = 00000010
+#      Real value = 10011001
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 2485000.000 ps
+#      Expected value = 00000000000000000000000000001010
+#      Real value = 00000000000000000000000001101011
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[5] :: @time = 2485000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port DATA_MEM_OUT[6] :: @time = 2485000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 2535000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000001000100
+# ERROR! Vector Mismatch for output port MIR[2] :: @time = 2535000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101010000001101100000010010000100
+# ERROR! Vector Mismatch for output port MIR[4] :: @time = 2535000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101010000001101100000010010000100
+# ERROR! Vector Mismatch for output port MIR[7] :: @time = 2535000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101010000001101100000010010000100
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 2535000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101010000001101100000010010000100
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 2535000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101010000001101100000010010000100
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 2535000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101010000001101100000010010000100
+# ERROR! Vector Mismatch for output port MIR[29] :: @time = 2535000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101010000001101100000010010000100
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 2535000.000 ps
+#      Expected value = 010111100
+#      Real value = 001101010
+# ERROR! Vector Mismatch for output port MPC[2] :: @time = 2535000.000 ps
+#      Expected value = 010111100
+#      Real value = 001101010
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 2550000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000001000111
+# ERROR! Vector Mismatch for output port C_BUS[6] :: @time = 2585000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 2585000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101011000000101000100000000000111
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 2585000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101011000000101000100000000000111
+# ERROR! Vector Mismatch for output port MIR[14] :: @time = 2585000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101011000000101000100000000000111
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 2585000.000 ps
+#      Expected value = 010111100000000101000000001000010000
+#      Real value = 001101011000000101000100000000000111
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2585000.000 ps
+#      Expected value = 010111100
+#      Real value = 001101011
+# ERROR! Vector Mismatch for output port PC[0] :: @time = 2585000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000001101011
+# ERROR! Vector Mismatch for output port PC[2] :: @time = 2585000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000001101011
+# ERROR! Vector Mismatch for output port PC[3] :: @time = 2585000.000 ps
+#      Expected value = 00000000000000000000000001100100
+#      Real value = 00000000000000000000000001101011
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 2635000.000 ps
+#      Expected value = 00000000000000000000000001100101
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 2635000.000 ps
+#      Expected value = 00000000000000000000000001100101
+#      Real value = 00000000000000000000000000000000
+# ERROR! Vector Mismatch for output port MIR[0] :: @time = 2635000.000 ps
+#      Expected value = 010111101000001101010000001000010001
+#      Real value = 001101100000000101000010000000000010
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 2635000.000 ps
+#      Expected value = 010111101000001101010000001000010001
+#      Real value = 001101100000000101000010000000000010
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 2635000.000 ps
+#      Expected value = 010111101000001101010000001000010001
+#      Real value = 001101100000000101000010000000000010
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2635000.000 ps
+#      Expected value = 010111101
+#      Real value = 001101100
+# ERROR! Vector Mismatch for output port C_BUS[0] :: @time = 2685000.000 ps
+#      Expected value = 00000000000000000000000001100110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port C_BUS[1] :: @time = 2685000.000 ps
+#      Expected value = 00000000000000000000000001100110
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port MIR[24] :: @time = 2685000.000 ps
+#      Expected value = 010111101000001101010000001000010001
+#      Real value = 011011000001000101000000000000001000
+# ERROR! Vector Mismatch for output port MPC[8] :: @time = 2685000.000 ps
+#      Expected value = 010111101
+#      Real value = 111011000
+# ERROR! Vector Mismatch for output port C_BUS[2] :: @time = 2735000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000001101100
+# ERROR! Vector Mismatch for output port C_BUS[3] :: @time = 2735000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000001101100
+# ERROR! Vector Mismatch for output port C_BUS[5] :: @time = 2735000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000001101100
+# ERROR! Vector Mismatch for output port C_BUS[6] :: @time = 2735000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000001101100
+# ERROR! Vector Mismatch for output port MIR[1] :: @time = 2735000.000 ps
+#      Expected value = 010111110000100101001000000000000011
+#      Real value = 011011001000001101010000001000000001
+# ERROR! Vector Mismatch for output port MIR[9] :: @time = 2735000.000 ps
+#      Expected value = 010111110000100101001000000000000011
+#      Real value = 011011001000001101010000001000000001
+# ERROR! Vector Mismatch for output port MIR[16] :: @time = 2735000.000 ps
+#      Expected value = 010111110000100101001000000000000011
+#      Real value = 011011001000001101010000001000000001
+# ERROR! Vector Mismatch for output port MIR[21] :: @time = 2735000.000 ps
+#      Expected value = 010111110000100101001000000000000011
+#      Real value = 011011001000001101010000001000000001
+# ERROR! Vector Mismatch for output port MIR[27] :: @time = 2735000.000 ps
+#      Expected value = 010111110000100101001000000000000011
+#      Real value = 011011001000001101010000001000000001
+# ERROR! Vector Mismatch for output port MIR[28] :: @time = 2735000.000 ps
+#      Expected value = 010111110000100101001000000000000011
+#      Real value = 011011001000001101010000001000000001
+# ERROR! Vector Mismatch for output port MPC[0] :: @time = 2735000.000 ps
+#      Expected value = 010111110
+#      Real value = 011011001
+# ERROR! Vector Mismatch for output port MPC[1] :: @time = 2735000.000 ps
+#      Expected value = 010111110
+#      Real value = 011011001
